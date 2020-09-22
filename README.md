@@ -6,4 +6,4 @@ A Flutter plugin for showing native alert dialog in IOS and Toast messages in An
  
  Android                   |  IOS
 :-------------------------:|:-------------------------:
-<img src="https://github.com/Oleksandr32/flutter-alert/blob/master/gifs/android-test.gif" width="250" height="500">  |  <img src="https://github.com/Oleksandr32/flutter-alert/blob/master/gifs/ios-test.gif" width="250" height="500">
+<img src="https://github.com/Oleksandr32/flutter-alert/raw/master/gifs/android-test.gif" width="250" height="500">  |  <img src="https://github.com/Oleksandr32/flutter-alert/raw/master/gifs/ios-test.gif" width="250" height="500">
