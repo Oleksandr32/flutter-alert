@@ -17,5 +17,9 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: com.oleksandr32.alert
-    pluginClass: AlertPlugin
+    platforms:
+      android:
+        androidPackage: com.oleksandr32.alert
+        pluginClass: AlertPlugin
+      ios:
+        pluginClass: AlertPlugin
