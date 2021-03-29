@@ -34,7 +34,7 @@ public class AlertPlugin : FlutterPlugin, MethodCallHandler {
             val message = call.argument<String>("message")
             val shortDuration = call.argument<Boolean>("short-duration")
 
-            showToast(message, shortDuration)
+            showToast(message!!, shortDuration!!)
         } else {
             result.notImplemented()
         }
@@ -44,8 +44,8 @@ public class AlertPlugin : FlutterPlugin, MethodCallHandler {
         channel.setMethodCallHandler(null)
     }
 
-    private fun showToast(message: String?, shortDuration: Boolean?) {
-        val duration = if (shortDuration == null || shortDuration) Toast.LENGTH_SHORT else Toast.LENGTH_LONG
+    private fun showToast(message: String, shortDuration: Boolean) {
+        val duration = if (shortDuration) Toast.LENGTH_SHORT else Toast.LENGTH_LONG
         Toast.makeText(context, message, duration).show()
     }
 }

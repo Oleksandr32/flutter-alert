@@ -6,6 +6,7 @@ repository: https://github.com/Oleksandr32/flutter-alert
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.12.0"
 
 dependencies:
   flutter:
@@ -17,5 +18,9 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: com.oleksandr32.alert
-    pluginClass: AlertPlugin
+    platforms:
+      android:
+        package: com.oleksandr32.alert
+        pluginClass: AlertPlugin
+      ios:
+        pluginClass: AlertPlugin
