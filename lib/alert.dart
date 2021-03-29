@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:meta/meta.dart';
-
 import 'package:flutter/services.dart';
 
 class Alert {
@@ -12,9 +10,9 @@ class Alert {
   final bool shortDuration;
 
   Alert({
-    @required this.message,
+    required this.message,
     this.shortDuration = true,
-  }) : assert(message != null);
+  });
 
   Future<void> show() async {
     await _channel.invokeMethod(

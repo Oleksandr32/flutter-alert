@@ -1,15 +1,13 @@
 name: alert
 description: A Flutter plugin for showing native alert dialog in IOS and Toast messages in Android.
-version: 1.0.1
+version: 2.0.0
 homepage: https://github.com/Oleksandr32/flutter-alert
 repository: https://github.com/Oleksandr32/flutter-alert
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  meta: ^1.1.8
-
   flutter:
     sdk: flutter
 
