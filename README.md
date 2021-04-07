@@ -2,6 +2,14 @@
 
 A Flutter plugin for showing native alert dialog in IOS and Toast messages in Android.
 
+## Usage
+
+Just one line:
+
+```dart
+Alert(message: 'Test').show()
+```
+
 ## Examples
  
  Android                   |  IOS
