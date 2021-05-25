@@ -10,6 +10,17 @@ Just one line:
 Alert(message: 'Test').show()
 ```
 
+Also for Android, alert has an optional boolean param `shortDuration`:
+
+```dart
+Alert(message: 'Test', shortDuration: true).show()
+```
+
+`true` is equivalent of `Toast.LENGTH_SHORT`
+`false` is equivalent of `Toast.LENGTH_LONG`
+
+Param `shortDuration` is true by default.
+
 ## Examples
  
  Android                   |  IOS
